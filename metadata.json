@@ -1,8 +1,5 @@
 {
   "name": "Void Enterprises",
   "description": "Corporate website for Void Enterprises, a Nigerian holding company focused on technology, education, infrastructure, and more.",
-  "requestFramePermissions": [],
-  "majorCapabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
-  ]
+  "requestFramePermissions": []
 }
