@@ -8,16 +8,19 @@ export default function Founder() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
-          <motion.div
+          <motion.a
+            href="https://st-void-portfolio.onrender.com"
+            target="_blank"
+            rel="noopener noreferrer"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative h-[500px] lg:h-[700px] w-full rounded-sm overflow-hidden bg-gray-100 dark:bg-[#050508] border border-black/10 dark:border-white/10"
+            className="block relative h-[500px] lg:h-[700px] w-full rounded-sm overflow-hidden bg-gray-100 dark:bg-[#050508] border border-black/10 dark:border-white/10 group hover:border-black/30 dark:hover:border-white/30 transition-colors"
           >
-            <div className="absolute inset-0 grid-paper opacity-30" />
+            <div className="absolute inset-0 grid-paper opacity-30 group-hover:opacity-40 transition-opacity" />
             <div className="absolute inset-0 flex items-center justify-center flex-col text-center p-8">
-               <div className="w-32 h-32 rounded-full border border-black/20 dark:border-white/20 mb-8 flex items-center justify-center bg-black/5 dark:bg-white/5">
+               <div className="w-32 h-32 rounded-full border border-black/20 dark:border-white/20 mb-8 flex items-center justify-center bg-black/5 dark:bg-white/5 group-hover:scale-105 transition-transform duration-500">
                  <span className="text-4xl font-display text-black/50 dark:text-white/50">SD</span>
                </div>
                <div className="w-full max-w-xs h-[1px] bg-gradient-to-r from-transparent via-black/50 dark:via-white/50 to-transparent mb-8" />
@@ -25,10 +28,10 @@ export default function Founder() {
             </div>
             
             <div className="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-white dark:from-black to-transparent">
-              <h3 className="text-3xl font-display font-bold text-black dark:text-white mb-2">Sogolo Donaldson</h3>
+              <h3 className="text-3xl font-display font-bold text-black dark:text-white mb-2 group-hover:text-black/80 dark:group-hover:text-white/80 transition-colors">Sogolo Donaldson</h3>
               <p className="text-gray-600 dark:text-gray-400">Student • Software Engineer • Entrepreneur</p>
             </div>
-          </motion.div>
+          </motion.a>
 
           <motion.div
             initial={{ opacity: 0, x: 30 }}
